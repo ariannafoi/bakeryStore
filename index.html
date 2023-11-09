@@ -12,9 +12,30 @@
   <body>
 
     <!-- NAVBAR -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">BakeryStore</label>
+        <ul>
+          <li><a class="#" href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <!-- END NAVBAR -->
 
     <!-- SECTION ONE -->
+    <div class="container-fluid container-one">
+        <div class="row justify-content-around vh-100">
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-start flex-column">
+                <p class="p-0 m-0 titolo1">DELICIOUS <span class="titolo1 titolo-red">BAKERY SHOP !</span></p>
+                <button class="btn-57">VISIT OUR SHOP</button>
+            </div>
+        </div>
+    </div>
     <!-- END SECTION ONE -->
 
     <!-- SECTION TWO -->
@@ -23,23 +44,22 @@
     <!-- SECTION THREE -->
     <!-- END SECTION THREE -->
 
-    <!-- SECTION FOUR -->
-    <div class="container-fluid">
-        <div class="row row-section4 justify-content-center">
-            <!-- TITOLO -->
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center p-0">
-                <div class="tag features">
+    <!-- SECTION FOUR-->
+    <div class="container-fluid first-container-4">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="tag features mt-3">
                     <p class="m-0 p-0">Know Our Features</p>
                 </div>
                 <h2 class="mt-3">DISCOVER <span class="titolo-red">THE FEATURES!</span></h2>
             </div>
+        </div>
+    </div>
 
-            <!-- FOTO CORNETTO SOLO DA MOBILE -->
-            <img src="media/cornetti.png" alt="" class="cornetto">
-
-            <!-- DUE CARD IN COLONNA -->
-            <div class="col-6 col-md-4 d-flex flex-column align-items-center card-colonna p-0">
-                <div class="card-section4">
+    <div class="container-fluid d-flex justify-content-evenly align-items-center second-container-4 mb-5">
+        <div class="row flex-column">
+            <div class="col-12 col-md-6">
+                <div class="card-section4 mb-5">
                     <div class="cerchio">
                         <i class="fa-solid fa-egg fa-2x text-white"></i>
                     </div>
@@ -47,7 +67,7 @@
                     <p>We only use natural ingredients from international producers.</p>
                 </div>
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column align-items-center card-colonna p-0">
+            <div class="col-12 col-md-6">
                 <div class="card-section4">
                     <div class="cerchio">
                         <i class="fa-solid fa-stroopwafel fa-2x text-white"></i>
@@ -56,17 +76,19 @@
                     <p>We only use natural ingredients from international producers.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- CARD CENTRALE UNICA -->
+        <div class="row">
             <div class="col-12 col-md-4 p-0 card-cornetto">
                 <div class="card-img">
                     <img src="media/cornetti.png" alt="" class="img-cornetto">
                 </div>
             </div>
+        </div>
 
-            <!-- DUE CARD IN COLONNA -->
-            <div class="col-6 col-md-4 d-flex flex-column align-items-center p-0 mt-1">
-                <div class="card-section4">
+        <div class="row flex-column">
+            <div class="col-12 col-md-6">
+                <div class="card-section4 mb-5">
                     <div class="cerchio">
                         <i class="fa-solid fa-utensils fa-2x text-white"></i>
                     </div>
@@ -74,7 +96,7 @@
                     <p>We only use natural ingredients from international producers.</p>
                 </div>
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column align-items-center p-0 mt-1">
+            <div class="col-12 col-md-6">
                 <div class="card-section4">
                     <div class="cerchio">
                         <i class="fa-solid fa-wheat-awn fa-2x text-white"></i>
@@ -89,61 +111,63 @@
 
     <!-- SECTION FIVE -->
     <div class="container-fluid">
-        <div class="row row-section5">
-            <div class="col-12 d-flex justify-content-between">
-                <div class="col-12 col-md-3 p-5">
-                    <h2>THE <span class="titolo-red">SWEETEST</span> CHRONICLES</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 titolo">
+                <h2>THE <span class="titolo-red">SWEETEST</span> CHRONICLES</h2>
+            </div>
+            <div class="col-10 col-md-4 d-flex justify-content-center align-items-center descrizione">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam quae error provident voluptatem dolores architecto molestiae illum laboriosam esse enim maxime optio, nulla, eaque sapiente, beatae ratione nostrum repellendus.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid card-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 card-section5">
+                <img src="media/Pane 1.png" alt="" class="img-fluid p-3 my-2">
+                <div class="d-flex m-3">
+                    <div class="tag hashtag">
+                        <p class="m-0 p-0">Recipe</p>
+                    </div>
+                    <div class="tag hashtag1 mx-2">
+                        <p class="m-0 p-0">New</p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4 p-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque cupiditate est natus distinctio, delectus placeat ex assumenda fugit optio blanditiis adipisci et eum labore, laborum, suscipit saepe ab nulla.</p>
+                <div class="m-3">
+                    <h3>How to make Sweet Bun Quickly!</h3>
+                    <p>We only use natural ingredients from international producers.</p>
                 </div>
             </div>
-
-            <div class="d-flex justify-content-center">
-                <div class="col-12 col-md-4 card-section5">
-                    <img src="media/Pane 1.png" alt="" class="img-fluid p-3 my-2">
-                    <div class="d-flex m-3">
-                        <div class="tag hashtag">
-                            <p class="m-0 p-0">Recipe</p>
-                        </div>
-                        <div class="tag hashtag1 mx-2">
-                            <p class="m-0 p-0">New</p>
-                        </div>
+            <div class="col-12 col-md-4 card-section5">
+                <img src="media/Pane 3.png" alt="" class="img-fluid p-3 my-2">
+                <div class="d-flex m-3">
+                    <div class="tag hashtag2">
+                        <p class="m-0 p-0">Hot</p>
                     </div>
-                    <div class="m-3">
-                        <h3>How to make Sweet Bun Quickly!</h3>
-                        <p>We only use natural ingredients from international producers.</p>
+                    <div class="tag hashtag mx-2">
+                        <p class="m-0 p-0">Category</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 card-section5">
-                    <img src="media/Pane 3.png" alt="" class="img-fluid p-3 my-2">
-                    <div class="d-flex m-3">
-                        <div class="tag hashtag2">
-                            <p class="m-0 p-0">Hot</p>
-                        </div>
-                        <div class="tag hashtag mx-2">
-                            <p class="m-0 p-0">Category</p>
-                        </div>
+                <div class="m-3">
+                    <h3>How to make Sweet Bun Quickly!</h3>
+                    <p>We only use natural ingredients from international producers.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 card-section5">
+                <img src="media/Pane 2.png" alt="" class="img-fluid p-0 my-1">
+                <div class="d-flex m-3">
+                    <div class="tag hashtag1">
+                        <p class="m-0 p-0">Popular</p>
                     </div>
-                    <div class="m-3">
-                        <h3>How to make Sweet Bun Quickly!</h3>
-                        <p>We only use natural ingredients from international producers.</p>
+                    <div class="tag hashtag2 mx-2">
+                        <p class="m-0 p-0">Recipe</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 card-section5">
-                    <img src="media/Pane 2.png" alt="" class="img-fluid p-0 my-1">
-                    <div class="d-flex m-3">
-                        <div class="tag hashtag1">
-                            <p class="m-0 p-0">Popular</p>
-                        </div>
-                        <div class="tag hashtag2 mx-2">
-                            <p class="m-0 p-0">Recipe</p>
-                        </div>
-                    </div>
-                    <div class="m-3">
-                        <h3>How to make Sweet Bun Quickly!</h3>
-                        <p>We only use natural ingredients from international producers.</p>
-                    </div>
+                <div class="m-3">
+                    <h3>How to make Sweet Bun Quickly!</h3>
+                    <p>We only use natural ingredients from international producers.</p>
                 </div>
             </div>
         </div>
@@ -151,7 +175,7 @@
     <!-- END SECTION FIVE -->
 
     <!-- FOOTER -->
-    <div class="container-fluid footer-color mt-5">
+    <!-- <div class="container-fluid footer-color mt-5">
         <div class="row row-footer"></div>
         <div class="row">
             <div class="col-12 col-md-6 margin margin-bottom p-5">
@@ -190,7 +214,7 @@
                 <p>Made By Arianna Foi</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- END FOOTER -->
 
 
