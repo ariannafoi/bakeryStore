@@ -70,6 +70,7 @@ nav{
 
     nav{
         height: 80px;
+        box-shadow: 1px 1px 10px grey;
     }
 
     .disposition{
@@ -224,7 +225,6 @@ h3, h5 {
     color: #5A4047;
 }
 
-
 /* SECTION FOUR */
 .first-container-4{
     height: 20vh;
@@ -294,8 +294,8 @@ h3, h5 {
 }
 
 .logo-footer{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .row-footer{
@@ -316,6 +316,15 @@ h3, h5 {
     height: 35px;
     background-color: #FEE0AC;
     border-radius: 5px;
+}
+
+.line{
+    border-top: 1px solid #5A4047;
+    padding: 15px 0px;
+}
+
+.footer-icon{
+    color: #5A4047;
 }
 
 /* VISUALIZZAZIONE DA DESKTOP */
@@ -438,7 +447,6 @@ h3, h5 {
     
     .second-container-4{
         height: 70vh;
-        padding: 80px 0px;
         color: white;
         background-color: #F9DEE9;
     }
