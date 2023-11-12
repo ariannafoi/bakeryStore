@@ -71,6 +71,7 @@ nav{
     nav{
         height: 80px;
         box-shadow: 1px 1px 10px grey;
+        z-index: 999;
     }
 
     .disposition{
@@ -94,7 +95,6 @@ nav{
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 999;
     }
 
     .list-item{
@@ -123,6 +123,7 @@ nav{
     #check:checked ~ ul{
       left: 0;
     }
+
 }
 
 /* cambio colore nav con JS solo su desktop */
@@ -131,6 +132,7 @@ nav.scrolled{
     box-shadow: 1px 1px 10px grey;
     z-index: 999;
 }
+
 /* FINE NAVBAR */
 
 
@@ -225,6 +227,34 @@ h3, h5 {
     color: #5A4047;
 }
 
+/* SECTION THREE */
+
+.first-container-3{
+    height: 20vh;
+}
+
+.first-container-3 h2{
+    font-size: 70px;
+}
+
+.tag3{
+    padding: 0 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.features3{
+    background-color: #F9DEE9;
+    color: black;
+}
+
+.product{
+    width: auto;
+    height: fit-content;
+    background-color: #FFFAF6;
+}
+
 /* SECTION FOUR */
 .first-container-4{
     height: 20vh;
@@ -267,7 +297,7 @@ h3, h5 {
 }
 
 .features{
-    background-color: white;
+    background-color: #FFFAF6;
     color: black;
 }
 
@@ -441,7 +471,7 @@ h3, h5 {
         background-color: #F9DEE9;
     }
     
-    .first-container-4 h2{
+    .first-container-3 h2, .first-container-4 h2{
         font-size: 20px;
     }
     
