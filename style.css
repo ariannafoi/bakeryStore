@@ -229,11 +229,7 @@ h3, h5 {
 
 /* SECTION THREE */
 
-.first-container-3{
-    height: 20vh;
-}
-
-.first-container-3 h2{
+.h2-section3{
     font-size: 70px;
 }
 
@@ -360,6 +356,21 @@ h3, h5 {
 /* VISUALIZZAZIONE DA DESKTOP */
 @media screen and (min-width: 768px) {
 
+    /* section 3 */
+    .card-section3{
+        align-items: center;
+        max-width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        background-color: #FFFAF6;
+        margin: 0 30px;
+    }
+
+    .div-temptations{
+        max-width: fit-content;
+        height: fit-content;
+    }
+
     /* section 4 */
     .cornetto{
         display: none;
@@ -395,7 +406,6 @@ h3, h5 {
     .card-section5{
         width: 350px;
         height: 440px;
-        /* border: 1px solid black; */
         border-radius: 20px;
         background-color: #FFFAF6;
         margin: 0 30px;
@@ -424,6 +434,21 @@ h3, h5 {
 
     .btn-57 {
         padding: 10px 40px;
+    }
+
+    /* section 3 */
+    .card-section3{
+        align-items: center;
+        max-width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        background-color: #FFFAF6;
+        margin: 0 30px;
+    }
+
+    .div-temptations{
+        max-width: fit-content;
+        height: fit-content;
     }
 
     /* section 4 */
@@ -472,7 +497,7 @@ h3, h5 {
     }
     
     .first-container-3 h2, .first-container-4 h2{
-        font-size: 20px;
+        font-size: 28px;
     }
     
     .second-container-4{
