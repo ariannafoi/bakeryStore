@@ -3,12 +3,15 @@
 /* color: #5A4047 */
 /* color: #CC7095 */
 
+
+
 /* NAVBAR */
 nav{
-    background: white;
+    background: transparent;
     height: 100px;
     width: 100%;
     position: fixed;
+    z-index: 999;
 }
 .disposition{
     display: flex;
@@ -16,9 +19,10 @@ nav{
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
-    margin-left: 50px;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin: 15px 50px;
 }
 
 .list{
@@ -35,7 +39,7 @@ nav{
 }
 
 .a-link{
-    color: black;
+    color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -54,7 +58,7 @@ nav{
 /* hamburger da mobile */
 .checkbtn{
     font-size: 30px;
-    color: #CC7095;
+    color: white;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -70,6 +74,7 @@ nav{
 
     nav{
         height: 80px;
+        background-color: #CC7095;
         box-shadow: 1px 1px 10px grey;
         z-index: 999;
     }
@@ -79,9 +84,10 @@ nav{
     }
 
     .logo{
-        width: 80px;
-        height: 80px;
-        margin-left: 10px;
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin: 22px 20px;
+        color: white;
     }
 
     .list{
@@ -91,7 +97,7 @@ nav{
         width: 100%;
         height: 100vh;
         background: white;
-        top: 68px;
+        top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -102,7 +108,7 @@ nav{
         list-style: none;
     }
     .a-link{
-        color: black;
+        color: #CC7095;
         font-size: 20px;
         margin: 30px ;
         padding: 7px 13px;
@@ -137,19 +143,42 @@ nav.scrolled{
 
 
 /* SECTION ONE */
-.titolo1{
-    font-size: 70px;
+.container1{
+    background-image: linear-gradient(to bottom,  rgba(245, 246, 252, 0.138), rgba(204, 112, 149, 0.683), rgba(245, 246, 252, 0.138)), url('media/intro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
+
+  .text-cutout {
+    background: white;
+    color: black;
+    font-size: 6vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 100%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+/* .titolo1{
+    font-size: 70px;
+} */
 
 .titolo-red{
     color: #F86D68;
 }
 
 .card-donut{
-    background-color: #63EADB;
-    width: 550px;
-    height: 550px;
-    border-radius: 170px 500px 170px 500px;
+    background: linear-gradient(#63EADB, white, #63EADB);
+    width: 500px;
+    height: 500px;
+    border-radius: 500px 170px 500px 170px;
 }
 
 /* bottone section one */
@@ -253,7 +282,7 @@ h3, h5 {
 
 /* SECTION FOUR */
 .first-container-4{
-    height: 20vh;
+    height: 10vh;
     background-color: #F9DEE9;
 }
 
@@ -356,6 +385,46 @@ h3, h5 {
 /* VISUALIZZAZIONE DA DESKTOP */
 @media screen and (min-width: 768px) {
 
+    .cake-custom{
+        width: 450px;
+        height: 450px;
+    }
+    .row2{
+        height: 80vh;
+    }
+
+    .div-border{
+        border-left: 10px solid #CC7095;
+    }
+
+    .margine-desktop{
+        margin-left: 50px;
+    }
+
+    .h2-section2{
+        font-size: 70px;
+    } 
+    .card-img2{
+        width: 400px;
+        height: 420px;
+        border-radius: 100px 20px 20px 20px;
+        padding: 5%;
+        margin: 5%;
+        background: linear-gradient(#F9DEE9, white);
+    }
+
+    .img-cornetto2{
+        position: relative;
+        top: 30%;
+        right: 27%;
+        width: 490px;
+        height: 350px;
+    }
+
+    .premium-custom{
+        width: 200px;
+    }
+
     /* section 3 */
     .card-section3{
         align-items: center;
@@ -372,10 +441,6 @@ h3, h5 {
     }
 
     /* section 4 */
-    .cornetto{
-        display: none;
-    }
-
     .card-section4{
         width: 350px;
         height: 200px;
@@ -436,6 +501,42 @@ h3, h5 {
         padding: 10px 40px;
     }
 
+    /* section 2 */
+
+    .row2{
+        height: 60vh;
+    }
+
+    .h2-section2{
+        font-size: 40px;
+    }
+
+    .div-border{
+        border-left: 10px solid #CC7095;
+    }
+
+    .div-custom2{
+        max-width: 280px;
+    }
+
+    .card-wrapper{
+        width: 300px;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-cornetto2{
+        width: 100%;
+        height: auto;
+    }
+
+    .premium-custom{
+        width: 200px;
+    }
+
     /* section 3 */
     .card-section3{
         align-items: center;
@@ -482,12 +583,15 @@ h3, h5 {
         font-size: 20px !important;
     }
    
+    .card-cornetto{
+        display: none;
+    }
     .cornetto{
         max-width: 100%;
         height: auto;
     }
 
-    .card-cornetto{
+    .img-cornetto{
         display: none;
     }
 
