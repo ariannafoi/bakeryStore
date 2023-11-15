@@ -2,7 +2,7 @@ const nav = document.querySelector('#nav');
 const links = document.querySelectorAll('.a-link');
 
 window.onscroll = ()=> {
-  if(window.scrollY > 0 && window.innerWidth > 858){
+  if(window.scrollY > 0){
     nav.classList.add('scrolled');
 
     links.forEach((link)=>{

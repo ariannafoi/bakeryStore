@@ -74,8 +74,7 @@ nav{
 
     nav{
         height: 80px;
-        background-color: #CC7095;
-        box-shadow: 1px 1px 10px grey;
+        background-color: transparent;
         z-index: 999;
     }
 
@@ -137,6 +136,7 @@ nav.scrolled{
     background: #CC7095;
     box-shadow: 1px 1px 10px grey;
     z-index: 999;
+    transition: .3s;
 }
 
 /* FINE NAVBAR */
@@ -165,10 +165,6 @@ nav.scrolled{
     transform: translate(-50%, -50%); /* Position text in the middle */
     mix-blend-mode: screen; /* This makes the cutout text possible */
 }
-
-/* .titolo1{
-    font-size: 70px;
-} */
 
 .titolo-red{
     color: #F86D68;
@@ -492,6 +488,10 @@ h3, h5 {
 /* VISUALIZZAZIONE DA TELEFONO */
 @media screen and (max-width: 767px) {
 
+    .container1{
+        background-image: linear-gradient(to bottom, rgba(204, 112, 149, 0.50), rgba(245, 246, 252, 0.138), rgba(204, 112, 149, 0.50)), url('media/intro.jpg');
+    }
+
     /* section 1 */
     .titolo1{
         font-size: 30px;
@@ -509,6 +509,8 @@ h3, h5 {
 
     .h2-section2{
         font-size: 40px;
+        text-align: center;
+        margin: 25px 0px;
     }
 
     .div-border{
@@ -535,6 +537,13 @@ h3, h5 {
 
     .premium-custom{
         width: 200px;
+    }
+
+
+    .btn-mobile{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
     }
 
     /* section 3 */
