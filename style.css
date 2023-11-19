@@ -8,7 +8,7 @@
 /* NAVBAR */
 nav{
     background: transparent;
-    height: 100px;
+    height: 70px;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -20,9 +20,9 @@ nav{
 
 .logo{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 5px;
-    margin: 15px 50px;
+    margin: 10px 40px;
 }
 
 .list{
@@ -148,6 +148,7 @@ nav.scrolled{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
   .text-cutout {
@@ -338,45 +339,6 @@ h3, h5 {
 }
 
 
-/* FOOTER */
-.footer-color{
-    background-color: #CC7095;
-    color: white;
-}
-
-.logo-footer{
-    width: 100px;
-    height: 100px;
-}
-
-.row-footer{
-    height: 25vh;
-}
-
-.email{
-    width: 300px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #8EF9EC;
-    padding: 10px;
-}
-
-.subscribe{
-    width: auto;
-    height: 35px;
-    background-color: #FEE0AC;
-    border-radius: 5px;
-}
-
-.line{
-    border-top: 1px solid #5A4047;
-    padding: 15px 0px;
-}
-
-.footer-icon{
-    color: #5A4047;
-}
 
 /* VISUALIZZAZIONE DA DESKTOP */
 @media screen and (min-width: 768px) {
@@ -483,6 +445,37 @@ h3, h5 {
         margin-top: 30px;
     }
     
+
+    /* FOOTER */
+    .container-footer{
+        background-color: #CC7095;
+        color: #ffffff;
+        height: 20vh;
+    }
+
+    .footer-division{
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: start;
+    }
+
+    .footer-division a {
+        text-decoration: none;
+        color: white;
+        margin-right: 100px;
+
+    }
+
+    .icon-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .rights-footer{
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 /* VISUALIZZAZIONE DA TELEFONO */
@@ -640,9 +633,33 @@ h3, h5 {
     .descrizione p{
         display: none;
     }
-    
 
-    .row-footer{
-        height: 40vh;
+    /* FOOTER */
+    .container-footer{
+        background-color: #CC7095;
+        color: #ffffff;
+        height: 29vh;
+    }
+
+    .footer-division{
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-division a {
+        text-decoration: none;
+        color: white;
+        margin: 5px 0px;
+    }
+
+    .rights-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rights-footer p{
+        margin: 0;
     }
 }
