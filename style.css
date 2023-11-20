@@ -83,9 +83,9 @@ nav{
     }
 
     .logo{
-        font-size: 25px;
+        font-size: 20px;
         letter-spacing: 5px;
-        margin: 22px 20px;
+        margin: 26px 20px;
         color: white;
     }
 
@@ -476,6 +476,11 @@ h3, h5 {
         align-items: center;
     }
 
+    .designed-footer {
+        margin: 0;
+        padding-top: 25px;
+    }
+
 }
 
 /* VISUALIZZAZIONE DA TELEFONO */
@@ -659,7 +664,16 @@ h3, h5 {
         align-items: center;
         justify-content: center;
     }
-    .rights-footer p{
+
+    .designed-footer {
         margin: 0;
+        padding-top: 17px;
     }
+
+}
+
+/* PROVA */
+.card-products{
+    max-width: 320px;
+    height: 350px;
 }
