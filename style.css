@@ -408,7 +408,8 @@ h3, h5 {
 
     /* FOOTER */
     .container-footer{
-        background-color: rgba(12, 18, 50);
+        /* background-color: rgba(12, 18, 50); */
+        background-color: #C69963;
         color: #ffffff;
         height: 20vh;
     }
@@ -605,9 +606,9 @@ h3, h5 {
 
     /* FOOTER */
     .container-footer{
-        background-color: rgb(12, 18, 50);
+        background-color: #C69963;
         color: #ffffff;
-        height: 29vh;
+        height: fit-content;
     }
 
     .footer-division{
@@ -631,7 +632,7 @@ h3, h5 {
 
     .designed-footer {
         margin: 0;
-        padding-top: 17px;
+        padding: 20px 0;
     }
 
 }
