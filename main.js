@@ -1,5 +1,6 @@
-const nav = document.querySelector('#nav');
+let nav = document.querySelector('#nav');
 const links = document.querySelectorAll('.a-link');
+const check = document.querySelector('#check');
 
 window.onscroll = ()=> {
   if(window.scrollY > 0){
@@ -18,3 +19,12 @@ window.onscroll = ()=> {
 
   }
 }
+
+check.addEventListener('click', ()=>{
+  if(check.checked){
+    nav.style.backgroundColor = 'white';
+    nav.style.transition = 'all .5s';
+  }else{
+    nav.style.backgroundColor = 'transparent'; 
+  }
+})
