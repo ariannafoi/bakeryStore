@@ -571,13 +571,8 @@ h3, h5 {
         display: none;
     }
 
-    .container-4-1{
-        background-color: rgb(12, 18, 50);
-    }
-
     .container-4-1 h2{
         font-size: 28px;
-        color: white;
         margin: 15px 0;
     }
     
@@ -667,7 +662,9 @@ h3, h5 {
     margin: 10px 0;
 }
 
-.div-description{
+.point-left, .point-right {
+    position: relative;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -675,14 +672,14 @@ h3, h5 {
     margin: 0;
 }
 
-.up{
-    z-index: 99;
-}
+@media screen and (max-width: 767px) {
+    .point-left, .point-right {
+        background-color: rgb(12, 18, 50);
+    }
 
-.point-left, .point-right {
-    position: relative;
-    background-color: #fff;
-    display: flex;
+    .disposizione-info p {
+        color: white;
+    }
 }
 
 .point-left::before {
