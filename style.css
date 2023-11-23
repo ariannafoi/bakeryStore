@@ -124,7 +124,7 @@ nav{
 
 }
 
-/* cambio colore nav con JS solo su desktop */
+/* cambio colore nav con JS */
 nav.scrolled{
     background-color: white;
     box-shadow: 1px 2px 10px rgba(12, 18, 50);
@@ -135,7 +135,6 @@ nav.scrolled{
 /* FINE NAVBAR */
 
 
-/* SECTION ONE */
 .container1{
     background-image: linear-gradient(to bottom,  rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845)), url('media/intro.jpg');
     background-repeat: no-repeat;
@@ -213,7 +212,6 @@ nav.scrolled{
     transform: translate(0);
 }  
 
-/* FINE SECTION ONE */
 
 h2{
     color: black;
@@ -223,7 +221,6 @@ h3, h5 {
     color: #C69963;
 }
 
-/* SECTION THREE */
 
 .h2-section3{
     font-size: 70px;
@@ -249,7 +246,6 @@ h3, h5 {
     background-color: #FFFAF6;
 }
 
-/* SECTION FOUR */
 
 .container-4-1 h2{
     font-size: 70px;
@@ -267,7 +263,7 @@ h3, h5 {
     margin-bottom: 10px;
 }
 
-/* SECTION FIVE */
+
 .row-section5{
     height: 75vh;
 }
@@ -283,6 +279,95 @@ h3, h5 {
     color: white;
 }
 
+.point-left, .point-right {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.point-left::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: inherit;
+    /* top: -12px; */
+    bottom: 120px;
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 1;
+}
+
+.point-right::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: inherit;
+    /* top: -12px; */
+    bottom: 120px;
+    left: 100%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 1;
+}
+
+.card-product{
+    max-width: 250px;
+    height: 250px;
+}
+
+.card-recipe{
+    max-width: 320px;
+    height: fit-content;
+    margin: 10px 0;
+}
+
+.container-photo{
+    background-image: linear-gradient(to bottom,  rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845)), url('media/mohamed-hassouna-N4gtuEZ5gWc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-3-1{
+    background-color: rgba(12, 18, 50);
+    margin-top: 30px;
+}
+.container-3-2{
+    background-color: rgba(12, 18, 50);
+}
+
+.row-contacts{
+    height: 40vh;
+    background-color: rgb(12, 18, 50);
+    align-items: center;
+    color: white;
+}
+
+.row-contacts i{
+    color: #C69963;
+}
+
+.disposizione-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contact{
+    background-color: rgba(12, 18, 50);
+    margin-top: 30px;
+}
+
+.container-contact h2{
+    font-size: 70px;
+    color: white;
+    margin-top: 40px;
+}
 
 /* VISUALIZZAZIONE DA DESKTOP */
 @media screen and (min-width: 768px) {
@@ -450,7 +535,7 @@ h3, h5 {
 
 /* VISUALIZZAZIONE DA TELEFONO */
 @media screen and (max-width: 767px) {
-    /* section 1 */
+    /* section 1 telefono */
     .container1{
         background-image: linear-gradient(to bottom,  rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845)), url('media/introMobile.jpg');
         background-position-x: center;
@@ -464,7 +549,7 @@ h3, h5 {
         padding: 10px 40px;
     }
 
-    /* section 2 */
+    /* section 2 telefono */
     .margine-desktop{
         overflow-x: hidden;
     }
@@ -506,7 +591,7 @@ h3, h5 {
         margin: 20px 0px;
     }
 
-    /* section 3 */
+    /* section 3 telefono*/
     .card-section3{
         align-items: center;
         max-width: fit-content;
@@ -526,7 +611,56 @@ h3, h5 {
         margin: 20px 0px 20px 0px;
     }
 
-    /* section 4 */
+    .point-left, .point-right {
+        background-color: rgb(12, 18, 50);
+    }
+
+    .disposizione-info p {
+        color: white;
+    }
+
+    .point-left::before, .point-right::before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: inherit;
+        top: -12px;
+        /* bottom: 120px; */
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        z-index: 1;
+    }
+
+    /* ORDINE CARD E LABEL */
+    .ordine1{
+        order: 2;
+    }
+    .ordine2{
+        order: 1;
+    }
+    .ordine3{
+        order: 4;
+    }
+    .ordine4{
+        order: 3;
+    }
+    .ordine5{
+        order: 6;
+    }
+    .ordine6{
+        order: 5;
+    }
+
+    .container-photo{
+        background-image: linear-gradient(to bottom,  rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845)), url('media/louise-lyshoj-WHJTaLqonkU-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-attachment: fixed;
+    }
+
+    /* section 4 telefono*/
     .disposition-card-4{
         padding: 0;
         margin: 0;
@@ -588,7 +722,7 @@ h3, h5 {
         font-size: 28px;
     }
 
-    /* section 5 */
+    /* section 5 telefono*/
     .container-5-1 h2{
         font-size: 28px;
     }
@@ -606,8 +740,24 @@ h3, h5 {
         display: none;
     }
 
+    /* contacts telefono */
+    .row-contacts{
+        height: 80vh;
+        background-color: rgb(12, 18, 50);
+    }
 
-    /* FOOTER */
+    .disposizione-info{
+        padding-top: 20px;
+    } 
+
+    .container-contact h2{
+        font-size: 28px;
+        margin: 20px 0px 20px 0px;
+        color: white;
+        text-align: center;
+    }
+
+    /* FOOTER telefono*/
     .container-footer{
         background-color: #C69963;
         color: #ffffff;
@@ -640,14 +790,6 @@ h3, h5 {
 
 }
 
-/* PROVA */
-.container-3-1{
-    background-color: rgba(12, 18, 50);
-    margin-top: 30px;
-}
-.container-3-2{
-    background-color: rgba(12, 18, 50);
-}
 
 @media screen and (min-width: 1024px) {
     .container-3-2{
@@ -657,168 +799,4 @@ h3, h5 {
         flex-direction: column;
         justify-content: center;
     }
-}
-
-.card-product{
-    max-width: 250px;
-    height: 250px;
-}
-
-.card-recipe{
-    max-width: 320px;
-    height: fit-content;
-    margin: 10px 0;
-}
-
-.point-left, .point-right {
-    position: relative;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-@media screen and (max-width: 767px) {
-    .point-left, .point-right {
-        background-color: rgb(12, 18, 50);
-    }
-
-    .disposizione-info p {
-        color: white;
-    }
-}
-
-.point-left::before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    background-color: inherit;
-    /* top: -12px; */
-    bottom: 120px;
-    left: 0%;
-    transform: translateX(-50%) rotate(45deg);
-    z-index: 1;
-}
-
-.point-right::before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    background-color: inherit;
-    /* top: -12px; */
-    bottom: 120px;
-    left: 100%;
-    transform: translateX(-50%) rotate(45deg);
-    z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-    
-    .point-left::before, .point-right::before {
-        content: "";
-        position: absolute;
-        height: 25px;
-        width: 25px;
-        background-color: inherit;
-        top: -12px;
-        /* bottom: 120px; */
-        left: 50%;
-        transform: translateX(-50%) rotate(45deg);
-        z-index: 1;
-    }
-
-    /* ORDINE CARD E LABEL */
-    .ordine1{
-        order: 2;
-    }
-    .ordine2{
-        order: 1;
-    }
-    .ordine3{
-        order: 4;
-    }
-    .ordine4{
-        order: 3;
-    }
-    .ordine5{
-        order: 6;
-    }
-    .ordine6{
-        order: 5;
-    }
-}
-
-
-.container-photo{
-    background-image: linear-gradient(to bottom,  rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845)), url('media/mohamed-hassouna-N4gtuEZ5gWc-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-@media screen and (max-width: 768px) {
-    .container-photo{
-        background-image: linear-gradient(to bottom,  rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845), rgba(12, 18, 50, 0.845)), url('media/louise-lyshoj-WHJTaLqonkU-unsplash.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: center;
-        background-attachment: fixed;
-    }
-}
-
-.row-contacts{
-    height: 40vh;
-    background-color: rgb(12, 18, 50);
-    align-items: center;
-    color: white;
-}
-
-.row-contacts i{
-    color: #C69963;
-}
-
-@media screen and (max-width: 767px) {
-    .row-contacts{
-        height: 80vh;
-        background-color: rgb(12, 18, 50);
-    }
-
-}
-
-.disposizione-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-    .disposizione-info{
-        padding-top: 20px;
-    } 
-}
-
-.container-contact{
-    background-color: rgba(12, 18, 50);
-    margin-top: 30px;
-}
-
-.container-contact h2{
-    font-size: 70px;
-    color: white;
-    margin-top: 40px;
-}
-
-@media screen and (max-width: 768px) {
-    
-    .container-contact h2{
-        font-size: 28px;
-        margin: 20px 0px 20px 0px;
-        color: white;
-        text-align: center;
-    }
-
 }
