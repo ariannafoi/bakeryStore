@@ -353,6 +353,9 @@ h3, h5 {
         margin: 30px 25px;
         background-color: rgba(12, 18, 50);
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .central-card-4{
@@ -537,6 +540,9 @@ h3, h5 {
         margin: 0px;
         color: rgb(12, 18, 50);
         flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .card-colonna{
